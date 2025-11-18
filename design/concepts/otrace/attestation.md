@@ -1,11 +1,11 @@
-concept attestation [Action, Attestor, DataSubject]
+concept attestation [Action, Attestor, DataSubject]  
 purpose to allow parties to attest to report actions performed at a particular time on data about a specific data subject
-state 
-// fields
-attestor: Attestation → Party
-dataSubject: Attestation → DataSubject  // possibly set[DataSubjects], all “parties” associated with a consent
-action: Attestation → Action
-timestamp: Attestation → Timestamp
+state  
+// fields  
+attestor: Attestation → Party  
+dataSubject: Attestation → DataSubject  // possibly set[DataSubjects], all “parties” associated with a consent  
+action: Attestation → Action  
+timestamp: Attestation → Timestamp  
 // global state
 attestations: set Attestation
 actions
